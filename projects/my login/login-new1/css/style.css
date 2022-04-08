@@ -1,0 +1,254 @@
+/*===== write codes by laila mohamed ======*/
+body{
+    background:url('../img/1.jpg') no-repeat center center fixed;
+    -webkit-background-size:100% 100%;
+    -moz-background-size:100% 100%;
+    -o-background-size:100% 100%;	
+	background-size:100% 100%;
+	overflow:auto;
+	margin:0;	
+}
+
+/*start loading*/
+.loading-overlay{
+	background-color:#cc8d15;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	position:fixed;
+	z-index:99999
+}
+	
+.spinner {
+  margin: 100px auto;
+  margin-top:250px;
+  width: 70px;
+  height: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.spinner > div {
+  background-color: #fff;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+ /*end loading*/
+ 
+ /*start login*/
+.login{
+	margin-top:60px
+}
+
+.login-page {
+  background: none repeat scroll 0 0 #FEFEFE;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #EEEEEE;
+  color: #555555;
+  padding: 30px;
+  box-shadow:5px 5px 15px #404040
+}
+
+.login a{
+	color:#f9ac1a;
+	text-decoration:none;
+}
+
+.login a:hover{
+	text-decoration:none;
+}
+
+.login-header{
+	font-size:20px;
+	text-align:center;
+	margin-bottom:30px;
+	color:#f9ac1a
+}
+
+.login .stay{
+	margin-left:10px;
+	margin-bottom:10px;
+}
+
+.login .btn{
+	margin-top:10px
+}
+
+.group {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+  }
+  
+.group input{
+    font-size: 15px;
+    font-style: italic;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid;
+    border-color: #f0f0f0;
+}
+
+.group input:focus{
+  outline: none;
+  box-shadow: none;
+ }
+ 
+.group label {
+    color: #878787;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: normal;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    transition: 0.5s ease all;
+ }
+.group .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+ }
+.group .bar:before, 
+.group .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: #f9ac1a;
+  transition: 0.5s ease all;
+  }
+  
+.group .bar:before {
+      left: 50%;
+  }
+  
+.group .bar:after {
+      right: 50%;
+  }
+  
+.group .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+	}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -15px;
+  font-size: 15px;
+  color:#b37f1b ;
+ }
+ 
+nput:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+  }
+
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 50%;
+  }
+  
+.genric-btn {
+  display: inline-block;
+  outline: none;
+  line-height: 35px;
+  padding: 0 20px;
+  font-size:15px;
+  text-align: center;
+  text-decoration: none;
+  font-weight:400;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+   margin-top:15px 
+  }
+  
+.genric-btn:focus {
+  outline: none;
+  }
+  
+.circle {
+  border-radius: 20px;
+  }
+  
+.genric-btn.warning-border {
+  color: #f9ac1a;
+  border: 1px solid #f9ac1a;
+  background: #fff;
+  }
+  
+.genric-btn.warning-border:hover {
+  color:#fff;
+  background:#f9ac1a;
+  border: 1px solid transparent;
+  }
+  
+.genric-btn.arrow {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  }
+
+.genric-btn.arrow span {
+  margin-left: 10px;
+  }
+  
+.arrow span {
+  padding-left: 5px;
+  }

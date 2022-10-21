@@ -972,7 +972,7 @@ small,
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
   .nav-link.disabled {
-    color: #6c757d; }
+    color: #5f90b9; }
 
 .nav-tabs {
   border-bottom: 1px solid #dee2e6; }
@@ -985,7 +985,7 @@ small,
     .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
       border-color: #e9ecef #e9ecef #dee2e6; }
     .nav-tabs .nav-link.disabled {
-      color: #6c757d;
+      color: #5f90b9;
       background-color: transparent;
       border-color: transparent; }
   .nav-tabs .nav-link.active,
@@ -2814,19 +2814,19 @@ h1, h2, h3, h4, h5,
   a.btn{
     display:inline-block;
     text-decoration:none;		
-    color:#647295;
+    color:#5f90b9;
     background-color:transparent;
-    border:1px solid #647295;   
+    border:1px solid #5f90b9;   
     padding: 15px 20px;
     margin:5px 2px;        
     background-size: 200% 100%;	
-    background-image: linear-gradient(to right, transparent 50%, #647295 50%);
+    background-image: linear-gradient(to right, transparent 50%, #5f90b9 50%);
     transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
   }
   
   a.btn:hover{
     color:rgba(255, 255, 255, 1);
-    background-color:#647295;
+    background-color:#5f90b9;
     background-position: -100% 100%;
   }
 @-webkit-keyframes pulse {

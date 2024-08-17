@@ -357,3 +357,41 @@ function enableLineProgress(){
 		},{offset: "90%"})		
 	});
 }
+// dark theme
+// light theme
+function setCookie(name, value, days = 5) {
+	let expires = "";
+	if (days) {
+		let date = new Date();
+		date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+		expires = "; expires=" + date.toUTCString();
+	}
+	document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
+function toggleTheme() {
+	var element = document.body;
+	var isDarkMode = element.classList.toggle("dark-mode");
+	var icon = document.getElementById("theme-icon");
+	icon.classList.toggle("fa-sun");
+	icon.classList.toggle("fa-moon");
+	console.log(isLightMode)
+	if (typeof(Storage) !== "undefined") {
+		localStorage.setItem("isDarkMode", isLightMode);
+		setCookie("isDarkMode",isLightMode == 1)
+	}
+}
+
+
+window.onload = function() {
+	if (typeof(Storage) !== "undefined") {
+		var isLightMode = localStorage.getItem("isDarkMode");
+		if (isLightMode === "true") {
+			var element = document.body;
+			element.classList.add("dark-mode");
+			var icon = document.getElementById("theme-icon");
+			icon.classList.remove("fa-sun");
+			icon.classList.add("fa-moon");
+		}
+	}
+}
